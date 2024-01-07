@@ -37,6 +37,7 @@ readonly class TransactionFeeParser
 
     /**
      * @param TransactionDTO[] $inputTransactions
+     *
      * @return string[]
      */
     public function getUniqueCurrencies(array $inputTransactions): array
