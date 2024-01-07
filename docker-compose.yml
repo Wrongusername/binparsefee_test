@@ -1,0 +1,10 @@
+# Values of variables ${...} are set from the ./.env file
+version: '3.4'
+services:
+  php-dev:
+    build:
+      dockerfile: Dockerfile
+    working_dir: /var/www/php-dev
+    volumes:
+      - .:/var/www/php-dev
+    env_file: .env
