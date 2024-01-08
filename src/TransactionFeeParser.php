@@ -11,6 +11,11 @@ use BinparseTest\Input\InputProviderInterface;
 use BinparseTest\Input\TransactionDTO;
 use BinparseTest\Output\OutputInterface;
 
+/**
+ * main module - get input transactions from file
+ * prefetch exchange rates
+ * output transaction fees depending on fetched binlist EU attribution
+ */
 readonly class TransactionFeeParser
 {
     public function __construct(

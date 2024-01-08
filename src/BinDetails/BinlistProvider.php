@@ -5,6 +5,10 @@ namespace BinparseTest\BinDetails;
 use BinparseTest\HttpAccessor\HttpAccessorInterface;
 use BinparseTest\Util\UnexpectedResponseFormatException;
 
+/**
+ * binlist.net wrapper - api for retrieving credit card issuer info by iin/bin (6-8 digits)
+ * we're interested in country of origin / EU attribution
+ */
 readonly class BinlistProvider implements BinDetailsProviderInterface
 {
     private const ENDPOINT_URL = 'https://lookup.binlist.net/%s';

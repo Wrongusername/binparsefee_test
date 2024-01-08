@@ -6,6 +6,7 @@ use Exception;
 
 /**
  * parse input json file and return DTOs array with input transactions
+ * example input row : {"bin":"45717360","amount":"100.00","currency":"EUR"}
  */
 readonly class JsonFileInputProvider implements InputProviderInterface
 {

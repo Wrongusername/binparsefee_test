@@ -5,6 +5,11 @@ namespace BinparseTest\ExchangeRate;
 use BinparseTest\HttpAccessor\HttpAccessorInterface;
 use BinparseTest\Util\UnexpectedResponseFormatException;
 
+/**
+ * apilayer.com exchange rates api wrapper
+ * requires personal api key and exlicit subscription to exhange rates api from dashboard
+ * free access is 100 requests per month so prod usage would require caching
+ */
 readonly class ApilayerExchangeRatesProvider implements ExchangeRateProviderInterface
 {
     private const ENDPOINT_URL = 'https://api.apilayer.com/exchangerates_data/latest';

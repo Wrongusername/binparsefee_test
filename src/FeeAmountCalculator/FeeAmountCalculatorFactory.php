@@ -4,6 +4,10 @@ namespace BinparseTest\FeeAmountCalculator;
 
 use BinparseTest\BinDetails\BinDetailsDto;
 
+/**
+ * Calculates transaction fees depending on geographical CC issuer attribution
+ * larger decision base would favour moving decision logic to calc classes supports() method and accepting array on constructor
+ */
 class FeeAmountCalculatorFactory
 {
     public function __construct(
